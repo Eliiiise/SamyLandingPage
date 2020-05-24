@@ -1,5 +1,6 @@
 // Config
 @import "config/reset";
+@import "config/font-face";
 @import "config/variables";
 @import "config/global";
 
@@ -11,3 +12,4 @@
 
 // Components
 @import "components/button";
+@import "components/logo";

@@ -1,1 +1,18 @@
+.background {
+  position: absolute;
+  z-index: -100;
+}
 
+body {
+  overflow-x: hidden;
+}
+
+h1, h2, h3 {
+  font-family: $font-title;
+  color: $white;
+}
+
+p {
+  font-family: $font-text;
+  color: $white;
+}
