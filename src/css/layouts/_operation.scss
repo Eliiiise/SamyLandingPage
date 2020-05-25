@@ -1,19 +1,18 @@
-.team {
+.operation {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 200px 15%;
   margin-top: 600px;
 
-  .team-text {
-    h2 {
-      margin-bottom: 20px;
-    }
-  }
-
   img {
-    width: 500px;
-    margin-left: 200px;
-    margin-right: -100px;
+    width: 200px;
+    margin: 0 100px;
+  }
+  .option {
+    h2 {
+      font-size: 25px;
+      margin-bottom: 40px;
+    }
   }
 }

@@ -1,0 +1,84 @@
+.contact {
+  margin: 200px 15%;
+
+  h2, p {
+    text-align: center;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  .deposit {
+    font-size: 12px;
+  }
+
+  form {
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-between;
+    font-family: $font-text;
+    color: rgba(255,255,255,0.7);
+    font-weight: 100;
+    font-size: 15px;
+    letter-spacing: 1px;
+
+    .separation {
+      border-left: 1px solid rgba(255,255,255,0.5);
+    }
+
+    >div {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .user-info {
+      width: 35%;
+
+      div {
+        margin: 10px 0;
+        width: 100%;
+
+        input, input:focus {
+          background-color: rgba(0,0,0,0);
+          padding: 6px 0;
+          margin: 6px 0;
+          display: block;
+          border: none;
+          border-bottom: 1px solid rgba(255,255,255,0.5);
+          width: 100%;
+          font-family: $font-text;
+          color: $white;
+          font-weight: 400;
+          font-size: 15px;
+        }
+      }
+    }
+
+    .user-message {
+      width: 50%;
+
+      textarea {
+        background-color: rgba(0,0,0,0);
+        padding: 6px 0;
+        margin: 6px 0;
+        display: block;
+        border: none;
+        width: 100%;
+        height: 130px;
+        font-family: $font-text;
+        color: $white;
+        font-weight: 400;
+        font-size: 15px;
+        resize: none;
+      }
+
+      .send {
+        border: 1px solid $white;
+        font-weight: 300;
+        float: left;
+        margin-left: calc( 100% - 160px ) ;
+      }
+    }
+  }
+}

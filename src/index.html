@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="images/favicon^git.png" />
         <title>Samy</title>
     </head>
     <body>
@@ -42,5 +43,96 @@
                 </table>
             </div>
         </header>
+        <section class="concept">
+            <h2>Notre concept</h2>
+            <p>
+                Samy c’est une <b>appli de covoiturage</b> pour aller et revenir <b>de soirée</b> en toute sécurité ! Mobile et gratuite, elle permet aux étudiants de se rencontrer et de partager les frais !
+                Tout le monde pourra profiter sereinement de sa soirée et les Sam seront récompensés !
+            </p>
+            <table>
+                <tbody>
+                <tr class="icon">
+                    <td><img src="images/icone1.png"></td>
+                    <td><img src="images/icone2.png"></td>
+                    <td><img src="images/icone3.png"></td>
+                </tr>
+                <tr class="icon-text">
+                    <td>
+                        <b>frais de déplacement couverts</b> grâce au remplissage des voitures
+                    </td>
+                    <td>
+                        <b>avantages uniques</b> dans nos bars et boîtes partenaires : soft offert, entrée gratuite...
+                    </td>
+                    <td>
+                        <b>nouvelles rencontres</b> avec, qui sait, peut-être de nouveaux collègues de soirées
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="perso charlotte">
+                <img src="images/charlotte.png">
+                <div class="perso-text">
+                    <h2>Hello !</h2>
+                    <p>
+                        Moi c’est Charlotte la fille qui fait toujours Sam ! <b>T’en as marre de faire Sam sans reconnaissance ?</b> Moi aussi. Tout ça c’est bientôt fini grâce à Samy !
+                    </p>
+                </div>
+            </div>
+            <div class="perso guillaume">
+                <div class="perso-text">
+                    <h2>Hey !</h2>
+                    <p>
+                        Moi c’est Guillaume, le mec <b>toujours en galère pour rentrer de soirée !</b> Toi aussi ? Avec Samy, réserves ton trajet et profites sereinement de ta soirée. A toi la bouteille de vovo !
+                    </p>
+                </div>
+                <img src="images/guillaume.png">
+            </div>
+        </section>
+        <section class="operation">
+            <div class="option">
+                <h2>Être Samy</h2>
+                <p>Après t’être inscrit(e), dis nous <b>d’où tu pars</b> et <b>où tu vas</b> (avec la date et l’heure de ton trajet) et <b>ton trajet sera immédiatement visible</b> pour les personnes qui recherchent un Samy.</p>
+            </div>
+            <img src="images/mockup.png">
+            <div class="option">
+                <h2>Trouver un Samy</h2>
+                <p>Après t’être inscrit(e), dis nous <b>où tu veux aller</b>, <b>d’où tu pars</b> et quand et tous les Samy opérationnels te seront proposés. Il te restera qu’à <b>choisir celui qui correspond</b> le mieux à ta recherche.</p>
+            </div>
+        </section>
+        <section class="team">
+            <div class="team-text">
+                <h2>Hello,</h2>
+                <p>nous voici, <b>l’équipe</b> qui a créé Samy. Nous nous sommes rencontrés en 2018 au cours de notre (DUT MMI) et depuis nous ne nous sommes plus quittés.
+                    <br><br>L’idée de Samy nous est venue pendant un cours de marketing. Nous devions réfléchir à une <b>innovation</b>. Compagnons dans la vie de tous les jours comme dans les <b>soirées étudiantes</b>, nous nous sommes donc inspirés de nos propres expériences et galères pour rentrer de soirée les jeudis soirs. </p>
+            </div>
+            <img src="images/team.png">
+        </section>
+        <section class="contact">
+            <h2>Contact</h2>
+            <p>Une <b>question</b> ? Envie de <b>participer à l’aventure Samy</b> ?</p>
+            <p class="deposit">* champs obligatoires</p>
+            <form action="mail.php" method="post">
+                <div class="user-info">
+                    <div>
+                        <label for="name">nom / société *</label>
+                        <input type="text" id="name" name="user_name" required>
+                    </div>
+                    <div>
+                        <label for="mail">e-mail *</label>
+                        <input type="email" id="mail" name="user_mail" required>
+                    </div>
+                    <div>
+                        <label>sujet</label>
+                        <input type="text" id="subject" name="user_subject">
+                    </div>
+                </div>
+                <span class="separation"></span>
+                <div class="user-message">
+                    <label for="msg">message *</label>
+                    <textarea id="msg" name="user_message" required></textarea>
+                    <button type="submit"  class="button-empty send">Envoyer</button>
+                </div>
+            </form>
+        </section>
     </body>
 </html>
