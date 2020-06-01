@@ -5,7 +5,7 @@ config = {
     entry: './src/js/index.js',
     output: { // sortie
         filename:'main.js',
-        path: path.resolve(__dirname, 'dist'), // cherche le chemin absolu de dost
+        path: path.resolve(__dirname, 'dist'), // cherche le chemin absolu de dst
     },
 
     mode: 'development',
@@ -14,6 +14,10 @@ config = {
             {
                 test: /\.html$/,
                 use: 'html-loader'
+            },
+            {
+                test: /\.php$/,
+                use: 'php-loader'
             },
             {
                 test: /\.scss$/,
@@ -60,6 +64,14 @@ config = {
         new HtmlWebpackPlugin({
             template: "./src/index.html",
             filename:'index.html'
+        }),
+        new HtmlWebpackPlugin({
+            template: "./src/mail.html",
+            filename:'mail.html'
+        }),
+        new HtmlWebpackPlugin({
+            template: "./src/mail.php",
+            filename:'mail.php'
         }),
     ]
 };

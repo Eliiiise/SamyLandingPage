@@ -111,7 +111,8 @@
             <h2>Contact</h2>
             <p>Une <b>question</b> ? Envie de <b>participer à l’aventure Samy</b> ?</p>
             <p class="deposit">* champs obligatoires</p>
-            <form action="mail.php" method="post">
+            <a href="mail.html">Mail</a>
+            <form id="contact_form" method="post" action="/mail.php" >
                 <div class="user-info">
                     <div>
                         <label for="name">nom / société *</label>
@@ -130,7 +131,7 @@
                 <div class="user-message">
                     <label for="msg">message *</label>
                     <textarea id="msg" name="user_message" required></textarea>
-                    <button type="submit"  class="button-empty send">Envoyer</button>
+                    <button type="submit" name="submit" class="button-empty send">Envoyer</button>
                 </div>
             </form>
         </section>
