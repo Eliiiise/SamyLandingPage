@@ -16,10 +16,6 @@ config = {
                 use: 'html-loader'
             },
             {
-                test: /\.php$/,
-                use: 'php-loader'
-            },
-            {
                 test: /\.scss$/,
                 use: ['style-loader','css-loader','postcss-loader', 'sass-loader'],
             },
@@ -58,16 +54,12 @@ config = {
                     loader: 'babel-loader',
                 }
             },
-        ]
+        ],
     },
     plugins: [
         new HtmlWebpackPlugin({
             template: "./src/index.html",
             filename:'index.html'
-        }),
-        new HtmlWebpackPlugin({
-            template: "./src/mail.html",
-            filename:'mail.html'
         }),
         new HtmlWebpackPlugin({
             template: "./src/mail.php",
