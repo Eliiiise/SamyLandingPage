@@ -61,62 +61,6 @@
                         Samy c’est une <b>appli de covoiturage</b> pour aller et revenir <b>de soirée</b> en toute sécurité ! Mobile et gratuite, elle permet aux étudiants de se rencontrer et de partager les frais !
                         Tout le monde pourra profiter sereinement de sa soirée et les Sam seront récompensés !
                     </p>
-                </div>
-                <img src="images/guillaume.png">
-            </div>
-        </section>
-        <section class="operation">
-            <div class="option">
-                <h2>Être Samy</h2>
-                <p>Après t’être inscrit(e), dis nous <b>d’où tu pars</b> et <b>où tu vas</b> (avec la date et l’heure de ton trajet) et <b>ton trajet sera immédiatement visible</b> pour les personnes qui recherchent un Samy.</p>
-            </div>
-            <img src="images/mockup.png">
-            <div class="option">
-                <h2>Trouver un Samy</h2>
-                <p>Après t’être inscrit(e), dis nous <b>où tu veux aller</b>, <b>d’où tu pars</b> et quand et tous les Samy opérationnels te seront proposés. Il te restera qu’à <b>choisir celui qui correspond</b> le mieux à ta recherche.</p>
-            </div>
-        </section>
-        <section class="team">
-            <div class="team-text">
-                <h2>Hello,</h2>
-                <p>nous voici, <b>l’équipe</b> qui a créé Samy. Nous nous sommes rencontrés en 2018 au cours de notre (DUT MMI) et depuis nous ne nous sommes plus quittés.
-                    <br><br>L’idée de Samy nous est venue pendant un cours de marketing. Nous devions réfléchir à une <b>innovation</b>. Compagnons dans la vie de tous les jours comme dans les <b>soirées étudiantes</b>, nous nous sommes donc inspirés de nos propres expériences et galères pour rentrer de soirée les jeudis soirs. </p>
-            </div>
-            <img src="images/team.png">
-        </section>
-        <section class="contact">
-            <h2>Contact</h2>
-            <p>Une <b>question</b> ? Envie de <b>participer à l’aventure Samy</b> ?</p>
-            <p class="deposit">* champs obligatoires</p>
-            <a href="mail.html">Mail</a>
-            <form id="contact_form" method="post" action="/mail.php" >
-                <div class="user-info">
-                    <div>
-                        <input type="text" id="name" name="user_name" required>
-                        <label for="name">nom / société *</label>
-
-                    </div>
-                    <div>
-                        <input type="email" id="mail" name="user_mail" required>
-                        <label for="mail">e-mail *</label>
-
-                    </div>
-                    <div>
-                        <input type="text" id="subject" name="user_subject">
-                        <label for="subject">sujet</label>
-
-                    </div>
-                </div>
-                <span class="separation"></span>
-                <div class="user-message user-info">
-                    <div>
-                        <textarea id="msg" name="user_message" required></textarea>
-                        <label for="msg">message *</label>
-                    </div>
-                    <button type="submit" name="submit" class="button-empty send">Envoyer</button>
-                </div>
-            </form>
-        </section>
                     <table>
                         <tbody>
                         <tr class="icon">
@@ -183,22 +127,24 @@
                     <form id="contact_form" method="post" action="/mail.php" >
                         <div class="user-info">
                             <div>
-                                <label for="name">nom / société *</label>
                                 <input type="text" id="name" name="user_name" required>
+                                <label for="name">nom / société *</label>
                             </div>
                             <div>
-                                <label for="mail">e-mail *</label>
                                 <input type="email" id="mail" name="user_mail" required>
+                                <label for="mail">e-mail *</label>
                             </div>
                             <div>
-                                <label>sujet</label>
                                 <input type="text" id="subject" name="user_subject">
+                                <label for="subject">sujet</label>
                             </div>
                         </div>
                         <span class="separation"></span>
-                        <div class="user-message">
-                            <label for="msg">message *</label>
-                            <textarea id="msg" name="user_message" required></textarea>
+                        <div class="user-message user-info">
+                            <div>
+                                <textarea id="msg" name="user_message" required></textarea>
+                                <label for="msg">message *</label>
+                            </div>
                             <button type="submit" name="submit" class="button-empty send">Envoyer</button>
                         </div>
                     </form>
