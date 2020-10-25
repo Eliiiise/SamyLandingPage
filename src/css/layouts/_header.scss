@@ -18,7 +18,9 @@ header {
       }
 
       .button-header {
-        margin-top: 30px;
+        margin: 0 -30px;
+        margin-top: 40px;
+        display: flex;
       }
     }
 
