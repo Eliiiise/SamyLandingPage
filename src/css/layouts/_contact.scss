@@ -36,32 +36,95 @@
       width: 35%;
 
       div {
-        margin: 10px 0;
         width: 100%;
+        position: relative;
+        height: 30px;
+        margin-bottom: 50px;
 
-        input, input:focus {
-          background-color: rgba(0,0,0,0);
-          padding: 6px 0;
-          margin: 6px 0;
-          display: block;
+        input, textarea {
+            position: absolute;
+            top: 0;
+            left:0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            outline: none;
+            background: none;
+            z-index: 1;
+            color: white;
+        }
+
+        textarea{
+          top:5px;
+        }
+
+        input:not(:focus), textarea:not(:focus){
+          border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+        }
+
+        input:focus + label{
+          top: -1rem;
+          color: rgba(255, 255, 255, 1);
+          z-index: 10;
+          left: 0;
+        }
+
+        textarea:focus + label {
+          top: -1.25rem;
+          color: rgba(255, 255, 255, 1);
+          z-index: 10;
+          left: 0;
+        }
+        
+        input:not(:focus)+label, textarea:not(:focus)+label{
+          top: 0.6rem;
+          z-index: 10;
+          background-color: transparent;
+          transition: all ease-in-out 300ms;
+        }
+
+        textarea{
           border: none;
-          border-bottom: 1px solid rgba(255,255,255,0.5);
+          border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+          outline: none;
           width: 100%;
-          font-family: $font-text;
-          color: $white;
-          font-weight: 400;
-          font-size: 15px;
+        }
+
+        input:focus,  textarea:focus{ 
+          border-bottom: 1px solid rgba(255, 255, 255, 1);
+        }
+
+        label {
+          position: absolute;
+          top: 1.8rem;
+          color: rgba(255, 255, 255, 0.4);
+          font-size: 1rem;
+          transition: .3s;
+        }
+
+        input:-webkit-autofill,
+        input:-webkit-autofill:hover,
+        input:-webkit-autofill:focus,
+        input:-webkit-autofill:active {
+            transition: background-color 5000s ease-in-out 0s;
+        }
+
+        input:-webkit-text-fill-color{
+          color: transparent;
         }
       }
     }
 
     .user-message {
+
+      div{
+        height: 100%;
+      }
+
       width: 50%;
 
       textarea {
         background-color: rgba(0,0,0,0);
-        padding: 6px 0;
-        margin: 6px 0;
         display: block;
         border: none;
         width: 100%;
@@ -69,7 +132,6 @@
         font-family: $font-text;
         color: $white;
         font-weight: 400;
-        font-size: 15px;
         resize: none;
       }
 
